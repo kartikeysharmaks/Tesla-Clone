@@ -21,9 +21,17 @@ const Footer = () => {
 
 const Container = styled.div`
 min-height:60px;
+margin-top:-20px;
 display:flex;
 align-items:center;
+justify-content:center;
 padding:10px 40px;
+@media(max-width:1050px){
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
 `
 const Menu = styled.div`
 flex:1;
@@ -37,6 +45,12 @@ a {
     flex-wrap: no-wrap;
     cursor:pointer;
     opacity:0.85;
+  }
+  @media(max-width:1050px){
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
   }
 `
 
